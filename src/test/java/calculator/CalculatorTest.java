@@ -36,7 +36,7 @@ public class CalculatorTest {
 
     @Test
     public void CalculateSquareCircTest() {
-        Assert.assertEquals(4, calculator.CalculateSquareCirc(1));
+        Assert.assertEquals(12, calculator.CalculateSquareCirc(3));
     }
 
     @Test
@@ -71,6 +71,11 @@ public class CalculatorTest {
 
     @Test
     public void factorialTest() {
+        Assert.assertEquals(1, calculator.factorial(-4));
+        Assert.assertEquals(1, calculator.factorial(-1));
+        Assert.assertEquals(1, calculator.factorial(0));
+        Assert.assertEquals(1, calculator.factorial(1));
+        Assert.assertEquals(2, calculator.factorial(2));
         Assert.assertEquals(24, calculator.factorial(4));
     }
 
@@ -97,10 +102,18 @@ public class CalculatorTest {
 
     @Test
     public void isPrimeFalseTest() {
-        boolean prime = calculator.isPrime(1);
-        Assert.assertFalse(prime);
-        prime = calculator.isPrime(8);
-        Assert.assertFalse(prime);
+        Assert.assertFalse(calculator.isPrime(1));
+        Assert.assertFalse(calculator.isPrime(8));
+
+        Assert.assertTrue(calculator.isPrime(2));
+        Assert.assertTrue(calculator.isPrime(3));
+        Assert.assertTrue(calculator.isPrime(5));
+        Assert.assertTrue(calculator.isPrime(7));
+
+        Assert.assertFalse(calculator.isPrime(4));
+        Assert.assertFalse(calculator.isPrime(6));
+        Assert.assertFalse(calculator.isPrime(9));
+        Assert.assertFalse(calculator.isPrime(10));
     }
 
 }
