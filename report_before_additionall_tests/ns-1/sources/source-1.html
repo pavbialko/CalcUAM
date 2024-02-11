@@ -1,0 +1,200 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Calculator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">calculator</a>
+</div>
+
+<h1>Coverage Summary for Class: Calculator (calculator)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Calculator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    11.8%
+  </span>
+  <span class="absValue">
+    (2/17)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/28)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    8%
+  </span>
+  <span class="absValue">
+    (2/25)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package calculator;
+<i class="no-highlight">2</i>&nbsp;
+<b class="fc"><i class="no-highlight">3</i>&nbsp;public class Calculator {</b>
+<i class="no-highlight">4</i>&nbsp;
+<i class="no-highlight">5</i>&nbsp;       
+<i class="no-highlight">6</i>&nbsp;    public double powerTwoNumbers(double a, double b) {
+<b class="nc"><i class="no-highlight">7</i>&nbsp;        return Math.pow(a, b);</b>
+<i class="no-highlight">8</i>&nbsp;    }
+<i class="no-highlight">9</i>&nbsp;    
+<i class="no-highlight">10</i>&nbsp;    public double sqrt (double a) {
+<b class="nc"><i class="no-highlight">11</i>&nbsp;        return Math.sqrt(a);</b>
+<i class="no-highlight">12</i>&nbsp;    }
+<i class="no-highlight">13</i>&nbsp;    
+<i class="no-highlight">14</i>&nbsp;    
+<i class="no-highlight">15</i>&nbsp;    public double CalculateSquareArea(int a) {
+<i class="no-highlight">16</i>&nbsp;        //return a+a;
+<b class="nc"><i class="no-highlight">17</i>&nbsp;        return a*a;</b>
+<i class="no-highlight">18</i>&nbsp;    }
+<i class="no-highlight">19</i>&nbsp;    
+<i class="no-highlight">20</i>&nbsp;    public double CalculateRectArea(int a, int b) {
+<b class="nc"><i class="no-highlight">21</i>&nbsp;        return a*b;</b>
+<i class="no-highlight">22</i>&nbsp;    }
+<i class="no-highlight">23</i>&nbsp;    
+<i class="no-highlight">24</i>&nbsp;    public int CalculateSquareCirc(int a) {
+<b class="nc"><i class="no-highlight">25</i>&nbsp;        return 4*a;</b>
+<i class="no-highlight">26</i>&nbsp;    }
+<i class="no-highlight">27</i>&nbsp;    
+<i class="no-highlight">28</i>&nbsp;    public int CalculateRectCirc(int a, int b) {
+<i class="no-highlight">29</i>&nbsp;        //return 2*a+2*a;
+<b class="fc"><i class="no-highlight">30</i>&nbsp;        return 2*a+2*b;</b>
+<i class="no-highlight">31</i>&nbsp;    }
+<i class="no-highlight">32</i>&nbsp;    
+<i class="no-highlight">33</i>&nbsp;     public double CalculateTriangleArea(int a, int h) {
+<b class="nc"><i class="no-highlight">34</i>&nbsp;        return (a*h)/2;</b>
+<i class="no-highlight">35</i>&nbsp;    }
+<i class="no-highlight">36</i>&nbsp;     
+<i class="no-highlight">37</i>&nbsp;      public double CalculateTriangleCirc(int a, int b, int c) {
+<b class="nc"><i class="no-highlight">38</i>&nbsp;        return a+b+c;</b>
+<i class="no-highlight">39</i>&nbsp;    }
+<i class="no-highlight">40</i>&nbsp;      
+<i class="no-highlight">41</i>&nbsp;    public double convertCelsiusToFarenheit (int celcius) {
+<b class="nc"><i class="no-highlight">42</i>&nbsp;        return 1.8*celcius+32;</b>
+<i class="no-highlight">43</i>&nbsp;    }
+<i class="no-highlight">44</i>&nbsp;    
+<i class="no-highlight">45</i>&nbsp;    public double convertFarenheitToCelsius (int farenheit) {
+<b class="nc"><i class="no-highlight">46</i>&nbsp;        return Math.round(0.5555555555555*(farenheit-32));</b>
+<i class="no-highlight">47</i>&nbsp;    }
+<i class="no-highlight">48</i>&nbsp;    
+<i class="no-highlight">49</i>&nbsp;    public double convertFromMphToKph(int mph) {
+<b class="nc"><i class="no-highlight">50</i>&nbsp;        return mph * 1.61;</b>
+<i class="no-highlight">51</i>&nbsp;    }
+<i class="no-highlight">52</i>&nbsp;    
+<i class="no-highlight">53</i>&nbsp;    public int factorial(int i) {
+<b class="nc"><i class="no-highlight">54</i>&nbsp;        if (i &lt; 1) return 1;</b>
+<b class="nc"><i class="no-highlight">55</i>&nbsp;        else return i * factorial (i - 1);</b>
+<i class="no-highlight">56</i>&nbsp;    }
+<i class="no-highlight">57</i>&nbsp;    
+<i class="no-highlight">58</i>&nbsp;    public int fibbonacci (int i) {
+<b class="nc"><i class="no-highlight">59</i>&nbsp;        if (i == 0 || i == 1) return i;</b>
+<b class="nc"><i class="no-highlight">60</i>&nbsp;        return fibbonacci (i-1) + fibbonacci (i-2);</b>
+<i class="no-highlight">61</i>&nbsp;    }
+<i class="no-highlight">62</i>&nbsp;    
+<i class="no-highlight">63</i>&nbsp;    public int findGCD(int a, int b) {
+<b class="nc"><i class="no-highlight">64</i>&nbsp;        if (b == 0) return a;</b>
+<b class="nc"><i class="no-highlight">65</i>&nbsp;        return findGCD(b, a%b);</b>
+<i class="no-highlight">66</i>&nbsp;    }
+<i class="no-highlight">67</i>&nbsp;    
+<i class="no-highlight">68</i>&nbsp;    public int findLCM(int a, int b) {
+<b class="nc"><i class="no-highlight">69</i>&nbsp;        return a*b/findGCD(a,b);</b>
+<i class="no-highlight">70</i>&nbsp;    }
+<i class="no-highlight">71</i>&nbsp;    
+<i class="no-highlight">72</i>&nbsp;    public boolean isPrime(int n) {
+<b class="nc"><i class="no-highlight">73</i>&nbsp;        if (n &lt;= 1) {</b>
+<b class="nc"><i class="no-highlight">74</i>&nbsp;            return false;</b>
+<i class="no-highlight">75</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">76</i>&nbsp;        for (int i = 2; i &lt;= Math.sqrt(n); i++) {</b>
+<b class="nc"><i class="no-highlight">77</i>&nbsp;            if (n % i == 0) {</b>
+<b class="nc"><i class="no-highlight">78</i>&nbsp;                return false;</b>
+<i class="no-highlight">79</i>&nbsp;            }
+<i class="no-highlight">80</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">81</i>&nbsp;        return true;</b>
+<i class="no-highlight">82</i>&nbsp;    }
+<i class="no-highlight">83</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-10 21:55</div>
+</div>
+</body>
+</html>
